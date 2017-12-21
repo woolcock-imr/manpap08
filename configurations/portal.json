@@ -1,0 +1,148 @@
+{
+	"name":"manpap08",
+	"url":"/modules/dynamic/panel.html",
+	"parameters":{
+		"sql_participant" : "@('Volunteer_ID')+' '+@('Initials')+' '+@('DOB')"
+	},
+	"panel":
+	{
+		"columns":
+		[
+			{
+				"sections":[{"name":"Participants","modules":[
+					{"module_id":"participant","name":"Participants","table_id":"20004263","url":"/modules/dynamic/manpap08/participant.html","counting":"1"}
+					]}]
+			}
+			,{
+				"sections":[
+					{"name":"01. Screening","modules":[
+					{"module_id":"m_001_001","name":"Medical History","table_id":"20005708","url":"/modules/dynamic/manpap08/task/medical_history.html","counting":"1"}
+					,{"module_id":"m_001_002","name":"Demographics","table_id":"20005664","url":"/modules/dynamic/manpap08/task/demographics.html","counting":"1"}
+					,{"module_id":"m_001_003","name":"Smoking History","table_id":"20005749","url":"/modules/dynamic/manpap08/task/smoking_history.html","counting":"1"}
+					,{"module_id":"m_001_004","name":"Informed Consent","table_id":"20005701","url":"/modules/dynamic/manpap08/task/document_1.html","counting":"1"}
+					,{"module_id":"m_001_005","name":"Physical Examination","table_id":"20005719","url":"/modules/dynamic/manpap08/task/document.html","counting":"1"}
+							]},
+					{"name":"02. Baseline","modules":[
+						{"module_id":"m_002_001","name":"Visit Date (Wk0)","table_id":"20005750","url":"/modules/dynamic/manpap08/task/attendance.html","counting":"1"}
+						,{"module_id":"m_002_002","name":"Randomisation","table_id":"20005738","url":"/modules/dynamic/manpap08/task/randomisation.html","counting":"1"}
+						,{"module_id":"m_002_003","name":"Anthropometry","table_id":"20005628","url":"/modules/dynamic/manpap08/task/anthropometry.html","counting":"1"}
+						,{"module_id":"m_002_004","name":"Extended Anthropometry","table_id":"20005686","url":"/modules/dynamic/manpap08/task/anthropometry_extended.html","counting":"1"}
+						,{"module_id":"m_002_005","name":"Abdominal CT Scan","table_id":"20005606","url":"/modules/dynamic/manpap08/task/ct-scan.html","counting":"1"}
+						,{"module_id":"m_002_006","name":"Dexa","table_id":"20005665","url":"/modules/dynamic/manpap08/task/feedback.html","counting":"1"}
+						,{"module_id":"m_002_007","name":"Bioimpedence","table_id":"20005640","url":"/modules/dynamic/manpap08/task/bioimpedance.html","counting":"1"}
+						,{"module_id":"m_002_008","name":"Osler Test","table_id":"20005712","url":"/modules/dynamic/manpap08/task/osler.html","counting":"1"}
+						,{"module_id":"m_002_009","name":"AusEd Upload","table_id":"20005630","url":"/modules/dynamic/manpap08/task/aused_upload.html","counting":"1"}
+						,{"module_id":"m_002_010","name":"AusEd Data","table_id":"20005629","url":"/modules/dynamic/manpap08/task/aused.html","counting":"1"}
+						,{"module_id":"m_002_011","name":"FOSQ","table_id":"20005691","url":"/modules/dynamic/manpap08/task/fosq.html","counting":"1"}
+						,{"module_id":"m_002_012","name":"ESS","table_id":"20005677","url":"/modules/dynamic/manpap08/task/ess.html","counting":"1"}
+						,{"module_id":"m_002_013","name":"IPAQ","table_id":"20005704","url":"/modules/dynamic/manpap08/task/ipac.html","counting":"1"}
+						,{"module_id":"m_002_014","name":"SF-36","table_id":"20005746","url":"/modules/dynamic/manpap08/task/sf36.html","counting":"1"}
+						,{"module_id":"m_002_015","name":"DASS","table_id":"20005661","url":"/modules/dynamic/manpap08/task/dass.html","counting":"1"}
+						,{"module_id":"m_002_016","name":"SCT","table_id":"20005739","url":"/modules/dynamic/manpap08/task/sct.html","counting":"1"}
+						,{"module_id":"m_002_017","name":"EFS","table_id":"20005680","url":"/modules/dynamic/manpap08/task/efs.html","counting":"1"}
+						,{"module_id":"m_002_018","name":"IIEF-5","table_id":"20005697","url":"/modules/dynamic/manpap08/task/iief.html","counting":"1"}
+						,{"module_id":"m_002_019","name":"PSG Alice","table_id":"20005720","url":"/modules/dynamic/manpap08/task/psg_alice.html","counting":"1"}
+						,{"module_id":"m_002_020","name":"PSG Computermedics","table_id":"20005723","url":"/modules/dynamic/manpap08/task/psg_compumedics.html","counting":"1"}
+						,{"module_id":"m_002_021","name":"PSG Sandman","table_id":"20005726","url":"/modules/dynamic/manpap08/task/psg_sandman.html","counting":"1"}
+						,{"module_id":"m_002_022","name":"PVT Test 1","table_id":"20005734","url":"/modules/dynamic/manpap08/task/pvt.html","counting":"1"}
+						,{"module_id":"m_002_023","name":"PVT Test 2","table_id":"20005736","url":"/modules/dynamic/manpap08/task/pvt.html","counting":"1"}
+						,{"module_id":"m_002_024","name":"Actiwatch Sleep Full Data ","table_id":"20005615","url":"/modules/dynamic/manpap08/task/actigraphy.html","counting":"1"}
+						,{"module_id":"m_002_025","name":"Actiwatch Activity","table_id":"20005610","url":"/modules/dynamic/manpap08/task/actigraphy_activity.html","counting":"1"}
+						,{"module_id":"m_002_026","name":"Endo-Pat","table_id":"20005673","url":"/modules/dynamic/manpap08/task/pat.html","counting":"1"}
+						,{"module_id":"m_002_027","name":"Pulse Wave Analysis Upload","table_id":"20005729","url":"/modules/dynamic/manpap08/task/pwa.html","counting":"1"}
+						]},
+						{"name":"05. CPAP Upload Week 1 and pressure set","modules":[
+						{"module_id":"m_003_001","name":"Blinded CPAP Start Date","table_id":"20005644","url":"/modules/dynamic/manpap08/task/cpap_treatment.html","counting":"1"}
+						,{"module_id":"m_003_002","name":"CPAP Upload","table_id":"20005659","url":"/modules/dynamic/manpap08/task/document_3.html","counting":"1"}
+						,{"module_id":"m_003_003","name":"CPAP Summary","table_id":"20005649","url":"/modules/dynamic/manpap08/task/cpap_download.html","counting":"1"}
+						]}
+					]}
+					,{
+						"sections":[
+							{"name":"07. Week 6 Follow-up","modules":[
+								{"module_id":"m_004_001","name":"Visit Date (Wk6)","table_id":"20005754","url":"/modules/dynamic/manpap08/task/attendance.html","counting":"1"}
+								,{"module_id":"m_004_002","name":"Anthropometry","table_id":"20005627","url":"/modules/dynamic/manpap08/task/anthropometry.html","counting":"1"}
+								,{"module_id":"m_004_003","name":"Extended Anthropometry","table_id":"20005689","url":"/modules/dynamic/manpap08/task/anthropometry_extended.html","counting":"1"}
+								,{"module_id":"m_004_004","name":"Bioimpedence","table_id":"20005639","url":"/modules/dynamic/manpap08/task/bioimpedance.html","counting":"1"}
+								,{"module_id":"m_004_005","name":"Osler Test","table_id":"20005711","url":"/modules/dynamic/manpap08/task/osler.html","counting":"1"}
+								,{"module_id":"m_004_006","name":"AusEd Upload","table_id":"20005638","url":"/modules/dynamic/manpap08/task/aused_upload.html","counting":"1"}
+								,{"module_id":"m_004_007","name":"AusEd Data","table_id":"20005637","url":"/modules/dynamic/manpap08/task/aused.html","counting":"1"}
+								,{"module_id":"m_004_008","name":"FOSQ","table_id":"20005695","url":"/modules/dynamic/manpap08/task/fosq.html","counting":"1"}
+								,{"module_id":"m_004_009","name":"ESS","table_id":"20005676","url":"/modules/dynamic/manpap08/task/ess.html","counting":"1"}
+								,{"module_id":"m_004_010","name":"IPAQ","table_id":"20005703","url":"/modules/dynamic/manpap08/task/ipac.html","counting":"1"}
+								,{"module_id":"m_004_011","name":"SF-36","table_id":"20005745","url":"/modules/dynamic/manpap08/task/sf36.html","counting":"1"}
+								,{"module_id":"m_004_012","name":"EFS","table_id":"20005684","url":"/modules/dynamic/manpap08/task/efs.html","counting":"1"}
+								,{"module_id":"m_004_013","name":"IIEF-5","table_id":"20005697","url":"/modules/dynamic/manpap08/task/iief.html","counting":"1"}
+								,{"module_id":"m_004_014","name":"CPAP Upload","table_id":"20005658","url":"/modules/dynamic/manpap08/task/document_3.html","counting":"1"}
+								,{"module_id":"m_004_015","name":"CPAP Summary","table_id":"20005654","url":"/modules/dynamic/manpap08/task/cpap_download.html","counting":"1"}
+								,{"module_id":"m_004_016","name":"Actiwatch Sleep Full Data ","table_id":"20005619","url":"/modules/dynamic/manpap08/task/actigraphy.html","counting":"1"}
+								,{"module_id":"m_004_017","name":"Actiwatch Activity","table_id":"20005614","url":"/modules/dynamic/manpap08/task/actigraphy_activity.html","counting":"1"}
+								,{"module_id":"m_004_018","name":"Pulse Wave Analysis Upload","table_id":"20005733","url":"/modules/dynamic/manpap08/task/pwa.html","counting":"1"}
+										]},
+								{"name":"08. Week 12 Follow up","modules":[
+									{"module_id":"m_005_001","name":">Overnight Sampling PSG Wk12","table_id":"20005715","url":"/modules/dynamic/manpap08/task/psg_sandman.html","counting":"1"}
+									{"module_id":"m_005_002","name":"Visit Date (Wk0)","table_id":"20005751","url":"/modules/dynamic/manpap08/task/attendance.html","counting":"1"}
+									,{"module_id":"m_005_003","name":"Anthropometry","table_id":"20005624","url":"/modules/dynamic/manpap08/task/anthropometry.html","counting":"1"}
+									,{"module_id":"m_005_004","name":"Extended Anthropometry","table_id":"20005685","url":"/modules/dynamic/manpap08/task/anthropometry_extended.html","counting":"1"}
+									,{"module_id":"m_005_005","name":"Abdominal CT Scan","table_id":"20005607","url":"/modules/dynamic/manpap08/task/ct-scan.html","counting":"1"}
+									,{"module_id":"m_005_006","name":"Dexa","table_id":"20005666","url":"/modules/dynamic/manpap08/task/feedback.html","counting":"1"}
+									,{"module_id":"m_005_007","name":"Bioimpedence","table_id":"20005641","url":"/modules/dynamic/manpap08/task/bioimpedance.html","counting":"1"}
+									,{"module_id":"m_005_008","name":"Osler Test","table_id":"20005713","url":"/modules/dynamic/manpap08/task/osler.html","counting":"1"}
+									,{"module_id":"m_005_009","name":"AusEd Upload","table_id":"20005632","url":"/modules/dynamic/manpap08/task/aused_upload.html","counting":"1"}
+									,{"module_id":"m_005_010","name":"AusEd Data","table_id":"20005631","url":"/modules/dynamic/manpap08/task/aused.html","counting":"1"}
+									,{"module_id":"m_005_011","name":"FOSQ","table_id":"20005692","url":"/modules/dynamic/manpap08/task/fosq.html","counting":"1"}
+									,{"module_id":"m_005_012","name":"ESS","table_id":"20005678","url":"/modules/dynamic/manpap08/task/ess.html","counting":"1"}
+									,{"module_id":"m_005_013","name":"IPAQ","table_id":"20005705","url":"/modules/dynamic/manpap08/task/ipac.html","counting":"1"}
+									,{"module_id":"m_005_014","name":"SF-36","table_id":"20005747","url":"/modules/dynamic/manpap08/task/sf36.html","counting":"1"}
+									,{"module_id":"m_005_015","name":"DASS","table_id":"20005662","url":"/modules/dynamic/manpap08/task/dass.html","counting":"1"}
+									,{"module_id":"m_005_016","name":"SCT","table_id":"20005740","url":"/modules/dynamic/manpap08/task/sct.html","counting":"1"}
+									,{"module_id":"m_005_017","name":"EFS","table_id":"20005681","url":"/modules/dynamic/manpap08/task/efs.html","counting":"1"}
+									,{"module_id":"m_005_018","name":"IIEF-5","table_id":"20005698","url":"/modules/dynamic/manpap08/task/iief.html","counting":"1"}
+									,{"module_id":"m_005_019","name":"Actiwatch file ","table_id":"20005621","url":"/modules/dynamic/manpap08/task/document_1.html","counting":"1"}
+									,{"module_id":"m_005_020","name":"CPAP Upload","table_id":"20005655","url":"/modules/dynamic/manpap08/task/document_3.html","counting":"1"}
+									,{"module_id":"m_005_021","name":"CPAP Summary","table_id":"20005651","url":"/modules/dynamic/manpap08/task/cpap_download.html","counting":"1"}
+									,{"module_id":"m_005_022","name":"PSG Alice","table_id":"20005721","url":"/modules/dynamic/manpap08/task/psg_alice.html","counting":"1"}
+									,{"module_id":"m_005_023","name":"PSG Computermedics","table_id":"20005724","url":"/modules/dynamic/manpap08/task/psg_compumedics.html","counting":"1"}
+									,{"module_id":"m_005_024","name":"PSG Sandman","table_id":"20005727","url":"/modules/dynamic/manpap08/task/psg_sandman.html","counting":"1"}
+									,{"module_id":"m_005_025","name":"Patient Impression","table_id":"20005716","url":"/modules/dynamic/manpap08/task/patient_impression.html","counting":"1"}
+									,{"module_id":"m_005_026","name":"Co-ordinator Impression","table_id":"20005646","url":"/modules/dynamic/manpap08/task/coordinator_impression.html","counting":"1"}
+									,{"module_id":"m_005_027","name":"PVT Test 1","table_id":"20005735","url":"/modules/dynamic/manpap08/task/pvt.html","counting":"1"}
+									,{"module_id":"m_005_028","name":"PVT Test 2","table_id":"20005737","url":"/modules/dynamic/manpap08/task/pvt.html","counting":"1"}
+									,{"module_id":"m_005_029","name":"Actiwatch Sleep Full Data ","table_id":"20005616","url":"/modules/dynamic/manpap08/task/actigraphy.html","counting":"1"}
+									,{"module_id":"m_005_030","name":"Actiwatch Activity","table_id":"20005611","url":"/modules/dynamic/manpap08/task/actigraphy_activity.html","counting":"1"}
+									,{"module_id":"m_005_031","name":"Endo-Pat","table_id":"20005674","url":"/modules/dynamic/manpap08/task/pat.html","counting":"1"}
+									,{"module_id":"m_005_032","name":"Pulse Wave Analysis Upload","table_id":"20005730","url":"/modules/dynamic/manpap08/task/pwa.html","counting":"1"}
+										]}
+
+								]
+					}
+					,{
+						"sections":[
+							{"name":"11. CPAP Upload Week 13 and pressure set","modules":[
+								{"module_id":"m_006_001","name":"Open-Label CPAP Start Date","table_id":"20005709","url":"/modules/dynamic/manpap08/task/cpap_treatment.html","counting":"1"}
+								,{"module_id":"m_006_002","name":"CPAP Summary","table_id":"20005650","url":"/modules/dynamic/manpap08/task/cpap_download.html","counting":"1"}
+								]},
+							{"name":"xxxx13. Week 18 Follow-up","modules":[
+								{"module_id":"m_007_001","name":"Actigraph summary","table_id":"20006107","url":"/modules/dynamic/manpap08/task/actigraphy.html","counting":"1"}
+								,{"module_id":"m_007_013","name":"FSFI ","table_id":"20006114","url":"/modules/dynamic/manpap08/task/IIEF.html","counting":"1"}
+									]},
+							{"name":"14. Week 24 Follow-up","modules":[
+								{"module_id":"m_008_001","name":"Attendance","table_id":"20006122","url":"/modules/dynamic/manpap08/task/Attendance.html","counting":"1"}
+								,{"module_id":"m_008_014","name":"EDITS-Partner ","table_id":"20006125","url":"/modules/dynamic/manpap08/task/edits.html","counting":"1"}
+								]}
+
+							]
+				}
+				,{
+								"sections":[
+							{"name":"Special Forms (Un-Scheduled Encounter)","modules":[
+									{"module_id":"m_009_001","name":"Adverse Event","table_id":"20006132","url":"/modules/dynamic/manpap08/task/Adverse_Event.html","counting":"1"}
+									,{"module_id":"m_009_004","name":"File Notes","table_id":"20006134","url":"/modules/dynamic/manpap08/task/File_Notes.html","counting":"1"}
+									,{"module_id":"m_009_005","name":"Serious Adverse Event","table_id":"20006136","url":"/modules/dynamic/manpap08/task/Serious_Adverse_Event.html","counting":"1"}
+									,{"module_id":"m_009_006","name":"Serious Adverse Event Follow Up","table_id":"20006137","url":"/modules/dynamic/manpap08/task/Serious_Adverse_Event_Follow_Up.html","counting":"1"}
+									,{"module_id":"m_009_002","name":"Miscellaneous files to be uploaded","table_id":"20006135","url":"/modules/dynamic/manpap08/task/document.html","counting":"1"}
+							]}
+						]}
+					]
+			}
+		}
